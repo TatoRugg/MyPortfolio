@@ -1,0 +1,39 @@
+{
+  "sidebarInfo": {
+    "id": 1,
+    "fullName": "Antonio Ruggiero",
+    "currentPosition": "Innovation Consultant",
+    "description": "Passionate about marketing and driven by the thrill of development, I seek and embrace new skills, cultures, and ventures. With a solid foundation in communication and marketing, and armed with a 'do it or learn it' attitude my dedication to entrepreneurship propels my journey. I strive to drive value creation combining new technologies and design thinking.",
+    "photo": "blob:http://localhost:3000/2fd1332c-a19b-4ef9-bab4-2032fa3e255f"
+  },
+  "projects": [
+    {
+      "id": "6a8c",
+      "title": "EL PUNTAZO",
+      "description": "loyalty program transforming everyday snack purchases into exciting rewards and fun challenges. Engaging users with gamified experiences and fostering a vibrant community, El Puntazo turns routine shopping into an adventure of prizes and unforgettable moments.",
+      "photos": [
+        "blob:http://localhost:3000/13486922-08ce-4cc3-9691-3bf5e6e229cc"
+      ],
+      "link": "https://web.elpuntazo.app/"
+    }
+  ],
+  "experiences": [],
+  "thoughts": [
+    {
+      "id": "6b8e",
+      "text": "wow que buen dia"
+    },
+    {
+      "id": "592c",
+      "text": "i really want the thoughts components to look like tweets"
+    },
+    {
+      "id": "01d6",
+      "text": "I should try some more iterations and see if it works any better"
+    },
+    {
+      "id": "8a44",
+      "text": "dayum its so hot"
+    }
+  ]
+}

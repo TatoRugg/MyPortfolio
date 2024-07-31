@@ -1,0 +1,20 @@
+.main-content {
+  padding: 20px;
+  background-color: #121212;
+  color: #e0e0e0;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.project {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Ensure elements stack vertically */
+  align-items: center; /* Center elements horizontally */
+}
+
+.project-photo {
+  max-width: 40%;
+  height: auto;
+  margin-top: px;
+}
