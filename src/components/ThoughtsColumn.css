@@ -1,9 +1,9 @@
 .thoughts-column {
   width: 20%;
-  background-color: #1e1e1e;
+ 
   padding: 20px;
   color: #e0e0e0;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+
   height: 100%; /* Ensure it stretches to fill the container */
   overflow-y: auto; /* Add scroll if content overflows */
 }
@@ -15,11 +15,15 @@
 }
 
 .thought {
-  background-color: #272727;
   padding: 15px;
-  border-radius: 10px;
   margin-bottom: 20px;
-  box-shadow: 0 3px 3px rgba(185, 185, 185, 0.2);
+  border-radius: 10px;
+  border-style: solid;
+  border-color:rgb(255, 255, 255, 0.7); 
+  border-width: 0.6px;
+  color: #8c77eb; /* Text color changes on hover */
+  background:transparent; /* Subtle background color on hover */
+  box-shadow: 0 2px 8px rgba(181, 119, 235, 0.5); /* Soft glow effect */
 }
 
 .thought p {

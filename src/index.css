@@ -9,3 +9,10 @@ body {
 * {
   box-sizing: border-box;
 }
+
+/* Mobile Responsive */
+@media (max-width: 390px) {
+  body {
+    padding: 0 10px;
+  }
+}

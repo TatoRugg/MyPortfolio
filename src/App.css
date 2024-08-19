@@ -1,4 +1,4 @@
-.app {
+/* .app {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -16,4 +16,61 @@
   color: #e0e0e0;
   height: 100%;
   overflow-y: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+ */
+ .app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between; /* Distributes space evenly */
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #121212;
+  color: #e0e0e0;
+  height: 100%;
+  overflow-y: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+/* Adjusting Sidebar and Thoughts Column to avoid extra space */
+.sidebar {
+  flex: 0 0 20%; /* Fixed width to avoid flex issues */
+  max-width: 20%;
+}
+
+.thoughts-column {
+  flex: 0 0 20%; /* Fixed width to avoid flex issues */
+  max-width: 20%;
+}
+
+/* Mobile Responsive */
+@media (max-width: 390px) {
+  .main-content-wrapper {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  
+  .main-content {
+    padding: 10px;
+    margin-top: 10px; /* Adjusted for mobile */
+    border-radius: 10px; /* Slightly smaller radius for mobile */
+  }
+
+  .sidebar, .thoughts-column {
+    flex: 1 0 auto; /* Allow full width on mobile */
+    max-width: 100%;
+    margin-bottom: 10px; /* Add spacing between elements */
+  }
 }
