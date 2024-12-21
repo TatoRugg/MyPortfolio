@@ -28,7 +28,7 @@ export default sidebarSlice.reducer;
  */
 
 import { createSlice } from '@reduxjs/toolkit';
-import { fetchSidebarInfo, updateSidebarInfo, fetchTools, addTool } from '../actions/SidebarActions';
+import { fetchSidebarInfo, updateSidebarInfo, fetchTools, addTool, updateTools, deleteTool } from '../actions/SidebarActions';
 
 const sidebarSlice = createSlice({
   name: 'sidebar',
@@ -70,6 +70,22 @@ const sidebarSlice = createSlice({
       })
       .addCase(addTool.rejected, (state, action) => {
         state.error = action.error.message;
+      })
+
+      // Handle updating a tool
+      .addCase(updateTools.fulfilled, (state, action) => {
+        const index = state.tools.findIndex((tool) => tool.id === action.payload.id);
+        if (index !== -1) {
+          state.tools[index] = action.payload; // Update the specific tool
+        }
+      })
+      .addCase(updateTools.rejected, (state, action) => {
+        state.error = action.error.message;
+      })
+
+      // Handle deleting a tool
+      .addCase(deleteTool.fulfilled, (state, action) => {
+        state.tools = state.tools.filter((tool) => tool.id !== action.payload); // Remove the tool from tools array
       });
   },
 });

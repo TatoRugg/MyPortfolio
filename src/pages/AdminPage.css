@@ -2,8 +2,9 @@
   padding: 20px;
   background-color: #121212;
   color: #e0e0e0;
-  height: 130vh;
+  height: 170vh;
   overflow-y: auto;
+  width: 100%;
 }
 
 form {
@@ -37,92 +38,268 @@ button:hover {
   color: #fff;
   box-shadow: 0 0 8px rgba(181, 119, 235, 0.5);
 }
+.export-button {
+  background-color: transparent; /* Makes the background transparent */
+  color: #fff;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 15px;
+  outline: none;
+  border: 2px solid #9e77eb; /* Fixed the border property */
+  cursor: pointer;
+  margin-left: 10px; /* Adds space between the logout button and the export button */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
 
-.thoughts-table-container {
+.export-button:hover {
+  background-color: #9e77eb; /* Hover background color */
+  box-shadow: 0 0 8px rgba(181, 119, 235, 0.5); /* Soft glow effect */
+}
+
+/* Specific Styling for Project Table */
+.projects-table-container {
+  max-height: 400px;
+  overflow-y: auto;
+  border-radius: 17px;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+}
+
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #292929;
+  border-radius: 17px;
+}
+
+/* Ensure uniform row height across all columns */
+.projects-table th, .projects-table td {
+  text-align: left; /* Align text left for readability */
+  vertical-align: middle; /* Vertically center content */
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+
+/* Specific styling for buttons in the "Actions" column */
+.projects-table td.buttons {
+  text-align: center;
+  vertical-align: middle; /* Center buttons vertically */
+}
+
+/* Styling for buttons */
+.projects-table td.buttons button {
+  width: 80px; /* Ensure buttons have uniform width */
+  background-color: rgb(146, 100, 215);
+  color: #000;
+  padding: 8px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  display: block;
+  margin: 5px auto; /* Center buttons horizontally */
+}
+
+.projects-table td.buttons button:hover {
+  background-color: #9e77eb;
+  color: #fff;
+  box-shadow: 0 0 8px rgba(181, 119, 235, 0.5);
+}
+
+/* Remove any unnecessary flex properties */
+.projects-table td:nth-child(3) {
+  padding: 20px;
+}
+
+
+/* Styling for Thoughts and Experiences - Remain the same */
+.thoughts-table-container, .experiences-table-container {
   max-height: 300px;
   overflow-y: auto;
   border-radius: 17px;
   border: 1px solid #333;
+  margin-bottom: 20px;
 }
 
-.thoughts-table {
+.thoughts-table, .experiences-table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #1e1e1e;
+  background-color: #292929;
   border-radius: 17px;
 }
 
-.thoughts-table th, .thoughts-table td {
+.thoughts-table th, .thoughts-table td, .experiences-table th, .experiences-table td {
   padding: 20px;
   text-align: left;
   border-bottom: 1px solid #333;
 }
 
-.thoughts-table th {
-  width: 70%; /* Thought column takes 70% of the space */
+.thoughts-table th, .experiences-table th {
+  width: 70%; /* Thought/Experience column takes 70% of the space */
 }
 
-.thoughts-table td {
-  vertical-align: top; /* Align content to the top */
+.thoughts-table td, .experiences-table td {
+  vertical-align: top;
 }
 
-.thoughts-table td.buttons {
-  width: 30%; /* Action column takes 30% of the space */
+.thoughts-table td.buttons, .experiences-table td.buttons {
+  width: 30%;
   display: flex;
-  flex-direction: column; /* Stack buttons vertically */
-  justify-content: space-between; /* Distribute buttons evenly */
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
 }
 
-.thoughts-table td input[type="text"] {
-  width: 100%;
-  padding: 5px;
-  background-color: #1e1e1e;
-  border-radius: 5px;
-  color: #e0e0e0;
-  border: 1px solid #333;
-}
-
-.thoughts-table td.buttons button {
+.thoughts-table td.buttons button, .experiences-table td.buttons button {
   background-color: rgb(146, 100, 215);
   color: #000;
   border: none;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  width: 100%; /* Make buttons full width */
-  box-sizing: border-box; /* Include padding and border in the element's width and height */
-  margin: 5px 0; /* Add vertical space between buttons */
+  width: 100%;
+  box-sizing: border-box;
+  margin: 5px 0;
 }
 
-.thoughts-table td.buttons button:hover {
+.thoughts-table td.buttons button:hover, .experiences-table td.buttons button:hover {
   background-color: #9e77eb;
   color: #fff;
 }
+/* Overall table styling */
+.tools-table-container {
+  max-height: 400px;
+  overflow-y: auto;
+  border-radius: 17px;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+}
 
-/* Mobile Responsive */
+.tools-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #292929;
+  border-radius: 17px;
+}
+
+/* Centering content in table headers and cells */
+.tools-table th, .tools-table td {
+  text-align: center; /* Horizontally center all content */
+  vertical-align: middle; /* Vertically center all content */
+  padding: 20px;
+  border-bottom: 1px solid #333;
+  height: 100%;
+}
+
+/* Set equal width for each column */
+.tools-table th:nth-child(1), 
+.tools-table td:nth-child(1) {
+  width: 33%; /* Tool Name column */
+}
+
+.tools-table th:nth-child(2), 
+.tools-table td:nth-child(2) {
+  width: 33%; /* Logo column */
+}
+
+.tools-table th:nth-child(3), 
+.tools-table td:nth-child(3) {
+  width: 33%; /* Actions column */
+}
+
+/* Ensure the logos are properly sized and centered */
+.tools-table td img {
+  max-width: 50px;  /* Reduce logo size */
+  height: auto;  /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the logo horizontally inside the cell */
+  display: block; /* Ensures image is treated as block for centering */
+}
+
+/* Center buttons in the Actions column */
+.tools-table td.buttons {
+  display: flex;
+  width: 100%;
+  flex-direction: column; /* Stack buttons vertically */
+  justify-content: center; /* Vertically center the buttons within the column */
+  align-items: center; /* Horizontally center the buttons */
+  gap: 10px; /* Space between Edit and Delete buttons */
+}
+
+/* Styling for buttons */
+.tools-table td.buttons button {
+  width: 80px;  /* Consistent button width */
+  background-color: rgb(146, 100, 215);
+  color: #000;
+  padding: 8px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 15px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  text-align: center; /* Ensure text is centered */
+}
+
+.tools-table td.buttons button:hover {
+  background-color: #9e77eb;
+  color: #fff;
+  box-shadow: 0 0 8px rgba(181, 119, 235, 0.5);
+}
+
+
+
+
 @media (max-width: 390px) {
   .admin-page {
     padding: 10px;
-    height: auto; /* Let the height adjust based on content */
+    height: auto;
   }
 
-  .thoughts-table-container {
-    max-height: 400px; /* Slightly increase height for mobile */
+  .projects-table-container, .thoughts-table-container, .experiences-table-container {
+    max-height: 400px;
+    margin-bottom: 20px;
   }
 
-  .thoughts-table th, .thoughts-table td {
+  .projects-table th, .thoughts-table th, .experiences-table th,
+  .projects-table td, .thoughts-table td, .experiences-table td {
     padding: 10px;
-    font-size: 0.9rem; /* Slightly smaller text for mobile */
+    font-size: 0.9rem;
   }
 
-  .thoughts-table td.buttons {
-    flex-direction: row; /* Arrange buttons horizontally on mobile */
-    justify-content: space-around; /* Space buttons evenly */
+  .projects-table td.buttons, .thoughts-table td.buttons, .experiences-table td.buttons {
+    flex-direction: row;
+    justify-content: space-around;
   }
 
-  .thoughts-table td.buttons button {
+  .projects-table td.buttons button, .thoughts-table td.buttons button, .experiences-table td.buttons button {
     flex: 1;
-    margin: 0 5px; /* Add space between buttons */
+    margin: 0 5px;
+  }
+
+  .tools-table-container {
+    max-height: 400px;
+    margin-bottom: 20px;
+  }
+
+  .tools-table th, .tools-table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .tools-table td.buttons {
+    flex-direction: row; /* Make buttons sit side by side on small screens */
+    justify-content: space-around;
+  }
+
+  .tools-table td.buttons button {
+    flex: 1;
+    margin: 0 5px; /* Adds space between side-by-side buttons */
+  }
+
+  .tools-table td img {
+    max-width: 40px; /* Smaller logo size on mobile */
+    height: 40px;
   }
 }

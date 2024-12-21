@@ -1,13 +1,12 @@
-import React, { useEffect,useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './HomePage.css';
 
 const images = [
-  'https://media.licdn.com/dms/image/D4D22AQHiUR4YwgR1WA/feedshare-shrink_1280/0/1710666209108?e=1726704000&v=beta&t=eIFnOtW0EoCIULswpgXh-bSAXyqv9st2t0b7mZs72V0',
-  'https://media.licdn.com/dms/image/D4D22AQGNp7mb1AQXcA/feedshare-shrink_1280/0/1710542053248?e=1726704000&v=beta&t=A037yMdOxvDeQsMzB7EMdZm0LvodF3KKEcmlhB8S7-c',
-  'https://media.licdn.com/dms/image/v2/D4D22AQGlpZJCrb9Sgg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1700161626044?e=1726704000&v=beta&t=4j-ewQNxXUVldZQ5AZngFcYmlZgOz52kqwy0NuOk0_Y',
-  'https://media.licdn.com/dms/image/D4E22AQHjqjs5LPXQaQ/feedshare-shrink_1280/0/1700203984188?e=1726704000&v=beta&t=DGtolkAQwCOb8wIe46CxC84DId6F2X0SzS0db4Xouv8',
-  'https://media.licdn.com/dms/image/v2/D4D22AQGHHesRixn8tw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1696921607361?e=1726704000&v=beta&t=Qfy9Hz6xFzcgXjIEZXzNd6vJS6WEQ5eJl8znLQif7YE',
-  'https://media.licdn.com/dms/image/v2/C4D22AQE5A262nVvDzw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1667924889629?e=1726704000&v=beta&t=OAQAkLw_d5HMxBrF5HnhqJz8iBtxxDM-2tciTdcJ_CU'
+  'https://media.licdn.com/dms/image/v2/D4D16AQGoCwHlh2pZRg/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1703174189509?e=1738195200&v=beta&t=G0vuC2HiOs0keK7YBfQnHhsKaKlzFYo0v-2zR6yEqOA',
+  'https://media.licdn.com/dms/image/v2/D4D22AQGfDnyGQOIRFA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1717505673643?e=1735776000&v=beta&t=RtVYCmfxHD5EtSHQyjrANWppZ2qP5g6wNnA3FCXsfFg',
+  'https://media.licdn.com/dms/image/v2/D4E22AQHjqjs5LPXQaQ/feedshare-shrink_1280/feedshare-shrink_1280/0/1700203984188?e=1735776000&v=beta&t=rNdR9UhhCK74MCLVnDySnHt2bvcpSkOu0APizfTs_iI',
+  'https://media.licdn.com/dms/image/v2/D4E22AQG4FUeeSLkGsQ/feedshare-shrink_1280/feedshare-shrink_1280/0/1700203983299?e=1735776000&v=beta&t=c-M_8Dq7jsXxDpR_SElDRmnd44s551xJp2Cc2uTp3NQ',
+  'https://media.licdn.com/dms/image/v2/D4E22AQHjqjs5LPXQaQ/feedshare-shrink_1280/feedshare-shrink_1280/0/1700203984188?e=1735776000&v=beta&t=rNdR9UhhCK74MCLVnDySnHt2bvcpSkOu0APizfTs_iI'
 ];
 
 const HomePage = () => {

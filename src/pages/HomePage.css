@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 150vh; /* Adjusted to fill the full viewport height */
+  height: 200vh; /* Adjusted to fill the full viewport height */
   overflow: hidden; /* Prevent the entire page from scrolling */
 }
 
@@ -15,7 +15,7 @@
   flex-direction: column;
   align-items: center;
   overflow-y: auto; /* Enable vertical scrolling within the main content */
-  height: 100%; /* Ensure the main content takes up the full height of the homepage */
+  height: 300vh; /* Ensure the main content takes up the full height of the homepage */
 }
 
 .carousel-container {
@@ -46,7 +46,7 @@
   transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.5s ease;
   box-sizing: border-box;
   padding: 20px;
-  transform-origin: center;
+  transform-origin: center center;
 }
 
 .carousel__item img {
@@ -76,6 +76,9 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  z-index: 1000; /* Ensure it is on top of other elements */
+  display: block; /* Make sure it's displayed */
+  text-align: center; /* Center the text */
 }
 
 .menu-button:hover {
@@ -136,7 +139,6 @@
     transform: rotateY(-360deg);
   }
 }
-
 /* Mobile Responsive */
 @media (max-width: 390px) {
   .homepage {
@@ -150,11 +152,19 @@
   }
 
   .carousel-container {
-    height: 200px;
+    height: 180px; /* Reduce height to fit mobile screen better */
+    max-width: 100%;
   }
 
   .carousel__item {
-    width: 70%;
-    left: 15%;
+    width: 85%; /* Reduce the width of each item */
+    left: 7.5%; /* Center the items horizontally */
+    transform-origin: center center; /* Center the rotation on mobile */
+    transform: translateZ(30px); /* Further reduce the distance from the center */
+  }
+
+  .menu-button {
+    width: 100%;
+    margin-top: 10px;
   }
 }

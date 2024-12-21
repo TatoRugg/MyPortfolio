@@ -30,3 +30,20 @@
   margin: 0;
   color: #ddd;
 }
+
+@media (max-width: 768px) {
+  .thoughts-column {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    background-color: #1e1e1e;
+  }
+
+  .thoughts-column.open {
+    right: 0;
+  }
+}

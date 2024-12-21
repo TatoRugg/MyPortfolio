@@ -16,3 +16,26 @@ export const addProject = createAsyncThunk(
     return response.data;
   }
 );
+
+// Delete a project
+export const deleteProject = createAsyncThunk(
+  'projects/deleteProject',
+  async (id) => {
+    await axios.delete(`http://localhost:5000/projects/${id}`);
+    return id;
+  }
+);
+
+// Update an existing project
+export const updateProject= createAsyncThunk(
+  'projects/updateProject',
+  async ({ id, title, description, photos, link }) => {
+    const response = await axios.put(`http://localhost:5000/projects/${id}`, {
+      title,
+      description,
+      photos,
+      link
+    });
+    return response.data;
+  }
+);

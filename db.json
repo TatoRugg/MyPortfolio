@@ -2,9 +2,9 @@
   "sidebarInfo": {
     "id": 1,
     "fullName": "Antonio Ruggiero",
-    "currentPosition": "Innovation Consultant",
+    "currentPosition": "Project manager",
     "description": "Passionate about marketing and driven by the thrill of development, I seek and embrace new skills, cultures, and ventures. With a solid foundation in communication and marketing, and armed with a 'do it or learn it' attitude my dedication to entrepreneurship propels my journey. I strive to drive value creation combining new technologies and design thinking.",
-    "photo": "https://media.licdn.com/dms/image/D4D03AQE08NWa8In-2g/profile-displayphoto-shrink_400_400/0/1703174143915?e=1728518400&v=beta&t=i7-CcMocF1KK2-XYajaJXw8-b3JCbSHae5gE9GrqW-8"
+    "photo": "https://media.licdn.com/dms/image/v2/D4D03AQE08NWa8In-2g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1703174143915?e=1740009600&v=beta&t=xw0V8TfQFFiir21gAWBACapZcd16_29ewuiGe36Gtls"
   },
   "tools": [
     {
@@ -46,22 +46,47 @@
       "id": "b9e4",
       "name": "Notion",
       "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png"
+    },
+    {
+      "id": "a92d",
+      "name": "Huemint",
+      "logoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFd5P0ohaGXC_zN1aHZIOfpnRCaWxls3xV3w&s"
+    },
+    {
+      "id": "5ff4",
+      "name": "Mineo",
+      "logoUrl": "https://cdn.prod.website-files.com/632d8bdfaa1985f0059dd554/632d9d23315aab8b36057754_mineo_logo_256.png"
+    },
+    {
+      "id": "5c29",
+      "name": "make",
+      "logoUrl": "https://planyo-extras.s3-accelerate.amazonaws.com/website/img/logo-make.png"
+    },
+    {
+      "id": "c9ae",
+      "name": "Wix Studio",
+      "logoUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpSTU8bBReEZKNpU0UhuRsM-M0yOTql-WKfw&s"
+    },
+    {
+      "id": "0885",
+      "name": "figjam",
+      "logoUrl": "https://s3-alpha.figma.com/profile/6d32267d-609b-4558-b6b9-1b1d4836814b"
     }
   ],
   "projects": [
     {
-      "id": "6a8c",
-      "title": "EL PUNTAZO",
-      "description": "loyalty program transforming everyday snack purchases into exciting rewards and fun challenges. Engaging users with gamified experiences and fostering a vibrant community, El Puntazo turns routine shopping into an adventure of prizes and unforgettable moments.",
+      "title": "pepsico project",
+      "description": "program transforming everyday snack purchases into exciting rewards and fun challenges. Engaging users with gamified experiences and fostering a vibrant community, El Puntazo turns routine shopping into an adventure of prizes and unforgettable moments.",
       "photos": [
         "https://framerusercontent.com/images/ijtGsdRCCMSvGEwNvwbSNBK1l6E.svg?scale-down-to=512"
       ],
-      "link": "https://web.elpuntazo.app/"
+      "link": "https://web.elpuntazo.app/",
+      "id": "6a8c"
     },
     {
       "id": "d891",
-      "title": "ADORA FOOD",
-      "description": "customized meals and premade plates that address common health conditions and dietary needs for seniors, ensuring they receive the necessary nutrients for cognitive health, heart health, muscle mass, and metabolism",
+      "title": "sigma project",
+      "description": "Customized meals and premade plates that address common health conditions and dietary needs for seniors, ensuring they receive the necessary nutrients for cognitive health, heart health, muscle mass, and metabolism.",
       "photos": [
         "https://cdn.shopify.com/s/files/1/0850/7146/2691/files/Logotipo_ADORA-03.png?v=1720000286"
       ],
@@ -75,28 +100,137 @@
         "https://www.oliveti.it/templates/gk_publisher/images/style1/logo.png"
       ],
       "link": "-"
+    },
+    {
+      "id": "e84d",
+      "title": "The Cube",
+      "description": "Customized meals and premade plates that address common health conditions and dietary needs for seniors, ensuring they receive the necessary nutrients for cognitive health, heart health, muscle mass, and metabolism.",
+      "photos": [
+        "https://media.licdn.com/dms/image/v2/C4D0BAQHmWzr8a9KlfA/company-logo_200_200/company-logo_200_200/0/1630578294610/thecubemadrid_logo?e=2147483647&v=beta&t=GKYam2ZMXn2XKDCf7BzCSFZ4qWgtWayXjVInrUkhbAU"
+      ],
+      "link": "https://www.thecubemadrid.com/"
+    },
+    {
+      "id": "c30e",
+      "title": "Project Manager",
+      "description": "Managed various aspects from chauffeur duties to project management and design.",
+      "photos": [
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE/mlUWHRYTUw6Y29tLmFkb2..."
+      ],
+      "link": ""
+    },
+    {
+      "id": "5b97",
+      "title": "Hello There",
+      "description": "Trying the new features.",
+      "photos": [
+        "https://www.oliomimi.com/wp-content/uploads/2020/09/logo_header.svg"
+      ],
+      "link": "https://www.oliomimi.com/en/"
     }
   ],
   "experiences": [
     {
-      "id": "ab02",
-      "description": "",
-      "photo": "",
+      "id": "example-id",
+      "title": "International Baccalaureate",
+      "date": "September 2016",
+      "description": "This is an example description of the experience.",
+      "photo": [
+        "https://moviemakers.guide/wp-content/gallery/box-hill-school/boxhillschool_1.jpg"
+      ],
+      "link": ""
+    },
+    {
+      "id": "1efa",
+      "title": "IE University",
+      "date": "September 2018",
+      "description": "Communication and Digital Media degree.",
+      "photo": [
+        "https://images.thesaurus.ie.edu/c/cover/q/75/w/740/h/480/p/center/f/jpeg/madrid-campus-ie-tower-emblematic-building"
+      ],
+      "link": ""
+    },
+    {
+      "id": "0147",
+      "title": "IE University",
+      "date": "September 2022",
+      "description": "Master in Management with specialization in Marketing and Sales.",
+      "photo": [
+        "https://images.thesaurus.ie.edu/c/cover/q/95/w/400/h/450/f/jpeg/building-maria-molina"
+      ],
+      "link": ""
+    },
+    {
+      "id": "e8b0",
+      "title": "The Cube",
+      "date": "July 2023",
+      "description": "Handled various roles from chauffeur to project manager, including design tasks.",
+      "photo": [
+        "https://micecatering.com/wp-content/uploads/2022/03/The-cube-2.jpg"
+      ],
+      "link": ""
+    },
+    {
+      "title": "thrcue ",
+      "date": "25 january 2025",
+      "description": "blabla bla ujeohfpiwqfoweoòfj",
+      "photo": [
+        "https://cdn.objectivemedia.group/uploads/images/_listingImageLarge/The-Cube.jpg?v=1697642274"
+      ],
+      "link": "",
+      "id": "bb9b"
+    },
+    {
+      "id": "09e8",
+      "title": "thecube",
+      "date": "january 2024",
+      "description": "bla blablabla ",
+      "photo": [
+        "https://cdn.objectivemedia.group/uploads/images/_listingImageLarge/The-Cube.jpg?v=1697642274"
+      ],
       "link": ""
     }
   ],
   "thoughts": [
     {
-      "text": "Truly love how this portfolio project is turning out, really looking forward to make this platform available to others too",
+      "text": "hola kika",
       "id": "6b8e"
     },
     {
-      "text": "Looking for more feature/adjustments to make this portfolio makes as intuitive as possible",
+      "text": "Feature Prueba 2",
       "id": "592c"
     },
     {
-      "text": "ciao flakoooooo",
-      "id": "01d6"
+      "text": "Feature prueba 3",
+      "id": "2948"
+    },
+    {
+      "text": "Feature prueba 4",
+      "id": "ccfd"
+    },
+    {
+      "text": "Feature Prueba 5",
+      "id": "5633"
+    },
+    {
+      "id": "7921",
+      "text": "hello lucy"
+    },
+    {
+      "id": "1367",
+      "text": "hello ther"
+    },
+    {
+      "id": "b192",
+      "text": "hello lucy"
+    },
+    {
+      "id": "4314",
+      "text": "hi mael whatsup"
+    },
+    {
+      "id": "552b",
+      "text": "hola irene"
     }
   ]
 }

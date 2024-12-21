@@ -12,31 +12,39 @@ const ExperiencePage = () => {
   }, [dispatch]);
 
   return (
-    <div className="main-content">
-      <h1>Experience</h1>
-      {experiences.length === 0 ? (
-        <p>No experiences available.</p>
-      ) : (
-        experiences.map((experience) => (
-          <div key={experience.id} className="experience">
-            <p>{experience.description}</p>
-            {experience.photo && (
-              <img src={experience.photo} alt="Experience" className="experience-photo" />
-            )}
-            {experience.link && (
-              <p>
-                <a href={experience.link} target="_blank" rel="noopener noreferrer">
-                  {experience.link}
-                </a>
-              </p>
-            )}
+    <div className="timeline-container">
+      <h1>My Road to Glory</h1>
+      <p>Below you can see a timeline with some of my professional accomplishments.</p>
+      <div className="timeline">
+        {experiences.map((experience, index) => (
+          <div
+            key={experience.id}
+            className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}
+          >
+            <div className="content">
+              {experience.photo && experience.photo[0] && (
+                <img
+                  src={experience.photo[0]}
+                  alt={`Experience - ${experience.title}`}
+                  className="experience-photo"
+                />
+              )}
+              <div className="experience-text">
+                <h2>{experience.title}</h2>
+                <h3>{experience.date}</h3>
+                <p>{experience.description}</p>
+                {experience.link && (
+                  <a href={experience.link} target="_blank" rel="noopener noreferrer">
+                    View More
+                  </a>
+                )}
+              </div>
+            </div>
           </div>
-        ))
-      )}
+        ))}
+      </div>
     </div>
   );
 };
 
 export default ExperiencePage;
-
-

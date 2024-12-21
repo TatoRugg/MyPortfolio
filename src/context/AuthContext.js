@@ -1,3 +1,5 @@
+// src/context/AuthContext.js
+
 import React, { createContext, useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -8,7 +10,7 @@ export const AuthProvider = ({ children }) => {
   const navigate = useNavigate();
 
   const login = (username, password) => {
-    if (username === 'antonior' && password === 'Tatoruggiero99') {
+    if (username === 'admin' && password === 'password') {
       setIsAuthenticated(true);
       navigate('/admin');
     } else {

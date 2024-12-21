@@ -17,17 +17,13 @@ const LoginPage = () => {
       <h1>Login</h1>
       <input
         type="text"
-        name='username'
         placeholder="Username"
-        autoComplete='username'
         value={username}
         onChange={(e) => setUsername(e.target.value)}
       />
       <input
         type="password"
-        name='password'
         placeholder="Password"
-        autoComplete='current-password'
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />

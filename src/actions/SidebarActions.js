@@ -61,3 +61,20 @@ export const addTool = createAsyncThunk(
     }
   }
 );
+
+export const updateTools = createAsyncThunk(
+  'sidebar/updateTools',
+  async (tool) => {
+    const response = await axios.put(`http://localhost:5000/tools/${tool.id}`, tool);
+    return response.data;
+  }
+);
+
+// Delete a project
+export const deleteTool = createAsyncThunk(
+  'sidebar/deleteTool',
+  async (id) => {
+    await axios.delete(`http://localhost:5000/tools/${id}`);
+    return id;
+  }
+);
